@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'events#index'
+  root 'asistants#index'
+
+
 
   resources :events
   resources :requests

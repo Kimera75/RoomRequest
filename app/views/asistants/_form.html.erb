@@ -1,10 +1,10 @@
-<%= form_for(@asistant) do |f| %>
-  <% if @asistant.errors.any? %>
+<%= form_for(asistant) do |f| %>
+  <% if asistant.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@asistant.errors.count, "error") %> prohibited this asistant from being saved:</h2>
+      <h2><%= pluralize(asistant.errors.count, "error") %> prohibited this asistant from being saved:</h2>
 
       <ul>
-      <% @asistant.errors.full_messages.each do |message| %>
+      <% asistant.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
